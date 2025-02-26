@@ -1,6 +1,11 @@
+/* -----------------Login Page------------------------- */
+
 .logo-absolute{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     top: 30px;
 }
+
+
+/* -----------------Main Page------------------------- */

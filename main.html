@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,139 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-slate-800">
-    <section class="max-w-md bg-gray-100 mx-auto h-screen flex items-center justify-center">
-       
-    </section>
+    <header>
+        <section class="max-w-md bg-gray-100 mx-auto">
+            <!-- Navbar -->
+            <header class="mx-5 pt-5">
+                <nav>
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img class="w-14" src="assets/Group.png" alt="">
+                            <div>
+                                <h2 class="font-bold text-2xl">
+                                    $ <span id="balance">4500</span>
+                                </h2>
+                                <p class="text-gray-500">
+                                    Available Balance
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline border-gray-400">
+                                Log Out
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <br>
+            <hr>
+            <main class="mx-5 pt-5">
+                <!-- Welcome Section -->
+                <div>
+                    <h2 class="font-bold text-3xl">
+                        Welcome to Payooo!
+                    </h2>
+                    <p class="text-gray-500 mt-3">
+                        Enjoy easy and convenient financial services with us. Cashout charge is low and
+                    </p>
+                </div>
+
+                <!-- box Section -->
+                <div class="grid grid-cols-3 grid-rows-2 gap-4 mt-5">
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/wallet1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            Add Money
+                        </h3>
+                    </div>
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/send1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            Cash Out
+                        </h3>
+                    </div>
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/money1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            TransferMoney
+                        </h3>
+                    </div>
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/bonus1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            Get Bonus
+                        </h3>
+                    </div>
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/purse1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            Pay Bill
+                        </h3>
+                    </div>
+                    <div
+                        class="border border-gray-400 hover:border-blue-600 hover:bg-blue-100 hover:text-blue-700 rounded-md flex flex-col justify-center items-center p-4">
+                        <img class="w-6 mb-2" src="assets/transaction1.png" alt="">
+                        <h3 class="font-medium text-sm">
+                            Transactions
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Add Money Section -->
+                <div class="pb-5">
+                    <h2 class="font-bold text-xl my-5">Add Money</h2>
+                    <div class="flex-col">
+                        <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <label class="label">
+                                    <span class="label-text">Select A Bank</span>
+                                </label>
+                                <select class="select select-bordered w-full">
+                                    <option disabled selected>UCB</option>
+                                    <option>Dutch Bangla</option>
+                                    <option>Dhaka</option>
+                                </select>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Bank Account Number</span>
+                                    </label>
+                                    <input type="email" placeholder="Enter 11 digit account number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount to Add</span>
+                                    </label>
+                                    <input id="amount" type="text" placeholder="Add Amount to withdraw"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin Number</span>
+                                    </label>
+                                    <input id="pin" type="text" placeholder="Enter 4 digit pin number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="add-money" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </header>
+    <script src="script/addMoney.js"></script>
+    <script src="script/troggle.js"></script>
 </body>
+
 </html>
